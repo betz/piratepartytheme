@@ -1,0 +1,491 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* imports */
+@import url("global-fonts.css");
+@import url("global-menu.css");
+@import url("global-text.css");
+
+/* general hacks */
+ul, li {
+	list-style: none outside none;
+}
+
+body {
+	font-family: AllerRegular, Geneva, "Helvetica Nueue", Helvetica, Verdana, Arial, sans-serif !important;
+	background-color: #522E91;
+	background-image: url(../images/pirate_party_flag.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	overflow-y: scroll;
+}
+
+div.content {
+	overflow: auto;
+}
+
+
+div.region-content-inner {
+	margin: 5px 25px 5px 5px;
+}
+
+#region-sidebar-first .content {
+	margin-bottom: 20px;
+}
+
+/* cookie controll button hack */
+#ccc-go {
+	color: black;
+}
+
+/* zone's, sections and regions */
+#section-header {
+	margin-top: 18px;
+  position: relative;
+	height: 180px;
+  background-color: #EEEEEE;
+  background-image: url("../images/darkwave.png"), url("../images/boat.png");
+  background-position: -20% bottom, 56% bottom;
+  background-repeat: repeat-x, no-repeat;
+  z-index: 5;
+}
+
+#zone-user {
+	text-align: right;
+}
+
+#zone-user div.block {
+	display: inline-block;
+}
+
+#zone-footer a {
+	color: #fff;
+}
+
+#zone-footer .other-pirate-parties-title {
+	margin-top: 15px;
+}
+#region-action-buttons {
+	position: absolute;
+	right: 30px;
+	top: 50px;
+}
+
+
+/*#zone-user a {
+	color: #522E91;
+	position: relative;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+ #zone-user a:hover {
+	color: #FF8800;
+}*/
+
+#pptheme-logo {
+	display: block;
+	width: 593px;
+	height: 77px; /* 77px is slightly larger then the logo realy is, but this is required becuase in narrow layout the mnu starts jumping up 4 pixels because the "Word Piraat" and "Help ons met een Donatie" are hidden.*/
+    text-indent: -999em;
+	background-image: url("../images/pplogo.png");
+	background-position: 0 top;
+	background-repeat: no-repeat;
+}
+
+/* Very Dirty Fix for zone-menu to get it moved down.. */
+#zone-menu-wrapper {
+	height: 0px;
+}
+#zone-menu {
+	/*top: -26px;
+	position: relative;*/
+}
+
+#region-menu {
+	position: absolute;
+	bottom: 0;
+}
+
+#section-content {	
+	background: #fff;
+	border-top: 8px solid #000;
+}
+
+#zone-content a {
+	color: #522E91;
+	position: relative;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+
+#zone-content a:hover {
+	color: #FF8800;
+}
+
+#zone-content .view-frontpage-blog .views-field-title .field-content a {
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1.4px;
+}
+
+#region-content .content h2.node-title {
+	margin-bottom: 0px;
+}
+
+#region-content .content footer.submitted  {
+	margin-bottom: 15px;
+}
+
+.node-links ul li a, .comment-links ul li a {
+	background: none repeat scroll 0 0 transparent;
+	border-radius: 0;
+	border-style: solid;
+	border-width: 0 1px 1px;
+	border-color: #522E91;
+}
+
+.node-links ul li a:hover, .comment-links ul li a:hover {
+	border-color: #FF8800;
+}
+
+.pager li {
+	border: none;
+}
+
+.pager li a {
+	color: white;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+.pager li a:hover {
+	border-color: #FF8800;
+}
+
+li.pager-next, li.pager-next a {
+	width: 70px !important;
+}
+
+li.pager-previous {
+	border-right: 1px solid #BBBBBB;
+}
+
+#zone-breadcrumb-wrapper {
+	background-color: black;
+	min-height: 8px;
+}
+
+#breadcrumb {
+	background-color: black;
+	height: 20px;
+	color: silver;
+	padding: 5px 20px 5px 15px;
+}
+
+#breadcrumb ul.breadcrumb  a {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+	border-radius: 5px 5px 5px 5px;
+	color: white;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+#breadcrumb ul.breadcrumb .active {
+	color: #C0C0C0;
+	background: none;
+	border-radius: 0;
+}
+
+#region-content {
+	background-color: white;
+	margin-right: 0;
+	margin-bottom: 40px;
+	background: url(../images/pirate_party_flag_trans.png) no-repeat top right;
+}
+
+#region-content .region-inner {
+	padding-left: 1em;
+}
+
+#region-sidebar-first,
+#region-sidebar-second {
+	background: #522E90;
+	margin-left: 0;
+	margin-bottom: 40px;
+	padding-top: 54px;
+  -webkit-border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+#region-sidebar-first .block,
+#region-sidebar-second .block {
+	margin: 0 0 15px;
+}
+
+#region-sidebar-first .block-title,
+#region-sidebar-second .block-title {
+	color: white;
+	letter-spacing: 1.4px;
+	margin-bottom: 5px;
+}
+
+#region-sidebar-first .region-inner,
+#region-sidebar-second .region-inner {
+	padding: 20px;
+}
+
+#region-sidebar-first .block .content,
+#region-sidebar-second .block .content {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.35);
+	padding: 5px;
+}
+
+#region-sidebar-first .content a,
+#region-sidebar-second .content a {
+    background: none repeat scroll 0 0 #522E91;
+    border-radius: 2px 2px 2px 2px;
+    color: white;
+    display: inline-block;
+    padding: 7px 10px;
+    text-transform: lowercase;
+}
+#region-sidebar-first .content a:hover,
+#region-sidebar-second .content a:hover {
+	background-color: #FF8800;
+}
+
+#region-sidebar-first ul.menu li,
+#region-sidebar-second ul.menu li {
+	list-style-type: none;
+	list-style-image: none;
+	padding: 5px 0;
+}
+
+/* sidebar layouts */
+	/* twitter layout */
+	#twitter-db-list {
+		color: black;
+	}
+
+	#twitter-db-list li {
+		padding-top: 25px;
+		background-image: url("../images/jolly.png");
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+
+	#twitter-db-list li.first {
+		padding-top: 0px;
+		background-image: none;
+	}
+
+	/* agregator layout */
+	.block-aggregator .content .item-list li {
+		margin: 3px 5px 2px 5px;
+	}
+
+	/* user menu layout */
+	.block-system-user-menu .content li {
+		list-style: none outside none !important;
+	}
+
+#section-footer {
+	overflow: hidden;
+}
+
+#region-footer-first-left {
+	margin-right: 0;
+}
+#region-footer-first-right {
+	margin-left: 0;
+}
+
+#region-footer-first-left div.region-inner {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+	color: #EEEEEE;
+	padding: 20px;
+}
+
+.other-pirate-parties-title, .ppnl-info-title {
+	letter-spacing: 1px;
+	font-size: 20px;
+	line-height: 25px;
+	font-family: "BebasNeueRegular",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.other-pirate-parties-links li, .ppnl-info-links  li {
+	float: left;
+}
+
+.other-pirate-parties-links a, .ppnl-info-links a {
+	text-decoration: none;
+	vertical-align: baseline;
+	position: relative;
+	background: none repeat scroll 0 0 black;
+	color: #2D7DC5;
+	display: block;
+	margin: 0 2px 2px 0;
+	padding: 0 5px;
+}
+#section-footer a:hover {
+    -moz-transition: all 0.2s ease-in-out 0s;
+    background: none repeat scroll 0 0 #2D7DC5;
+    color: white;
+}
+
+#region-footer-first-right div.region-inner {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+	color: #EEEEEE;
+	padding: 20px;
+}
+
+#region-footer-second div.region-inner {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+	color: #EEEEEE;
+	padding: 20px;
+}
+
+.region-sidebar-first .node-title {
+	display: none;	
+}
+
+.block-inner input[type="text"], .block-inner input[type="email"] {
+	width: 320px;
+}
+
+
+/* Blog post node */
+
+.node-blog-post.view-mode-teaser .field-name-ds-user-picture {
+	float: left;
+	width: 40px;
+}
+
+.node-blog-post.view-mode-teaser .field-name-node_author_name {
+	float: left;
+	width: 86%;
+}
+
+.node-blog-post.view-mode-teaser .field-name-ds-user-picture img {
+	padding: 3px 10px 5px 0;
+}
+
+.node-blog-post.view-mode-teaser .field-name-title h2,
+.node-blog-post.view-mode-teaser .field-name-node_author_name h2 {
+	margin: 0;
+	line-height: 16px;
+	margin-bottom: 1px;
+}
+
+.node-blog-post.view-mode-teaser .field-name-title a,
+.node-blog-post.view-mode-teaser .field-name-node_author_name a {
+	font-size: 16px;
+}
+
+.node-blog-post.view-mode-teaser .field-name-node_author_name  .title,
+.node-blog-post.view-mode-teaser .field-name-node_author_name  .author {
+	display: inline-block;
+}
+
+.node-blog-post.view-mode-teaser .field-name-node_author_name  .author {
+	padding-left: 5px;
+}
+
+.node-blog-post.view-mode-teaser .field-name-node_author_name  .author,
+.node-blog-post.view-mode-teaser .field-name-node_author_name  .author a {
+	font-size: 13px;
+	color: #ccc !important;
+}
+
+.node-blog-post.view-mode-teaser_2 {
+	position: relative;
+}
+
+.node-blog-post.view-mode-teaser_2 .field-name-title {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background: #522E91;
+	padding: 15px 15px;
+}
+
+.node-blog-post.view-mode-teaser_2 .field-name-title h2 {
+	margin: 0;
+	color: #fff;
+	font-size: 15px;
+	line-height: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.node-blog-post.view-mode-teaser_2 .field-name-title a {
+	color: #fff;
+}
+
+.node-blog-post.view-mode-full .group-left {
+	width: 30%;
+}
+
+.node-blog-post.view-mode-full .group-right {
+	width: 70%;
+}
+
+.view-pirateparty-workgroups h3 {
+	margin-bottom: 7px;
+	background: #522E90;
+	padding: 3px 5px 3px 5px;
+	color: #fff;
+	font-size: 15px;
+	display: inline-block;
+}
+
+.view-pirateparty-workgroups li {
+	list-style-type: initial;
+}
+
+.view-pirateparty-workgroups .view-content > .item-list {
+	float: left;
+	margin-right: 30px;
+}
+
+.view-pirateparty-workgroups {
+	min-height: 300px;
+}
+
+
+/* Forum */
+.forum-node-create-links {
+	margin-bottom: 17px;
+}
+
+
+/* Gazette */
+#gazette .pane-views-panes {
+	background: #FAF8F8;
+	padding: 5px;
+}
+#gazette .pane-views-panes .pane-title {
+	background: #522E90;
+	padding: 3px 5px 3px 5px;
+	color: #fff;
+	font-size: 15px;
+	display: inline-block;
+	margin: 0 0 10px;
+}
+.view-gazette-category li {
+	list-style: initial;
+}
+.view-gazette-category.view-display-id-panel_pane_3 .view-content {
+	overflow: hidden;
+}
+.view-gazette-category.view-display-id-panel_pane_3 .views-row {
+	display: inline-block;
+	margin: 5px 4px 5px 0;
+}
